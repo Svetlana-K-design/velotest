@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Много велосипедов</title>
+  <meta name="description" content="Много велосипедов хороших и разных">
+  <meta name="keywords" content="велосипеды горные, велосипеды женские">
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body class="page-body">
+  <div class="page-body__wrapper">
+  <main>
+    <section class="list">
+      <div class="list__wrapper">
+        <h1 class="list__title visually-hidden">Велосипеды</h1>
+        <div class="list__tabs tabs">
+          <input class="tabs__input visually-hidden" type="radio" name="tab-btn" id="tab-btn-1" checked>
+          <label class="tabs__label tabs__label--1" for="tab-btn-1">Горный велосипед
+            <input type="button" class="tabs__toggle tabs__toggle--1">
+          </label>
+          <div class="tabs__content tabs__content--1" id="content-1">
+            <div class="tabs__flex-block">
+              <div class="tabs__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 992px)"  srcset="img/stels-desk.webp 1x, img/stels-desk@2x.webp 2x">
+                  <source type="image/webp" srcset="img/stels.webp 1x, img/stels@2x.webp 2x">
+                  <source media="(min-width: 992px)" srcset="img/stels-desk.png 1x, img/stels-desk@2x.png 2x">
+                  <img src="img/stels.png" srcset="img/stels@2x.png 2x" alt="Фото велосипеда STELS Navigator">
+                </picture>
+              </div>
+              <div class="tabs__desc desc">
+                <h2 class="desc__title">Велосипед STELS Navigator 510 HD 26 2022</h2>
+                <p class="desc__info">Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам. Прогиб рамы и небольшой размер рамы расчитан на рост от 135 до 165 см.</p>
+                <p class="desc__info">Суммарный вес велосипеда был снижен до 16,9 кг, так как рама была изготовлена с учетом использования велосипеда подростками.</p>
+              </div>
+            </div>
+            <div class="tabs__list-block">
+              <h3 class="tabs__title-list">Характеристики</h3>
+              <ol class="tabs__list">
+                <li class="tabs__item">Двойной обод</li>
+                <li class="tabs__item">Алюминиевый сплав</li>
+                <li class="tabs__item">Колеса диаметром 26 дюймов</li>
+                <li class="tabs__item">Покрышки 26х1,95"</li>
+              </ol>
+            </div>
+            <div class="tabs__form-block form-block">
+              <h3 class="tabs__title-list">Добавить характеристику</h3>
+              <form class="form-block__flex" method="post" action="#">
+                <input class="form-block__input" type="text" placeholder="Алюминиевый сплав" required>
+                <button class="form-block__button" type="submit">Добавить</button>
+              </form>
+            </div>
+            <div class="tabs__button-block button-block">
+              <form class="button-block__flex" method="post" action="#">
+                <button class="button-block__submit" type="submit">Окей</button>
+                <button class="button-block__reset" type="reset">Отмена</button>
+              </form>
+            </div>
+          </div>
+          <input class="tabs__input visually-hidden" type="radio" name="tab-btn" id="tab-btn-2">
+          <label class="tabs__label tabs__label--2 closed" for="tab-btn-2">Женский велосипед
+            <input type="button" class="tabs__toggle tabs__toggle--2 closed">
+          </label>
+          <div class="tabs__content tabs__content--2 closed" id="content-2">
+            <div class="tabs__flex-block">
+              <div class="tabs__photo">
+                <picture>
+                  <source type="image/webp" media="(min-width: 992px)"  srcset="img/schwinn-desk.webp 1x, img/schwinn-desk@2x.webp 2x">
+                  <source type="image/webp" srcset="img/schwinn.webp 1x, img/schwinn@2x.webp 2x">
+                  <source media="(min-width: 992px)" srcset="img/schwinn-desk.png 1x, img/schwinn-desk@2x.png 2x">
+                  <img src="img/schwinn.png" srcset="img/schwinn@2x.png 2x" alt="Фото велосипеда SCHWINN Traveler women">
+                </picture>
+              </div>
+              <div class="tabs__desc desc">
+                <h2 class="desc__title">Велосипед SCHWINN Traveler women 2022</h2>
+                <p class="desc__info">Женский велосипед со стальной рамой Classic step-true lightweight позволяет девушкам без проблем его перемещать.</p>
+                <p class="desc__info">На данном велосипеде имеется 7&nbsp;скоростей с переключателями от Shimano, а жесткая вилка обеспечивает отличную управляемость. Подходит для катания по асфальтированным поверхностям.</p>
+              </div>
+            </div>
+            <div class="tabs__list-block">
+              <h3 class="tabs__title-list">Характеристики</h3>
+              <ul class="tabs__list tabs__list--ul">
+                <li class="tabs__item">Стальная рама</li>
+                <li class="tabs__item">Жесткая вилка</li>
+                <li class="tabs__item">Колеса диаметром 24 дюймов</li>
+                <li class="tabs__item">7 скоростей</li>
+              </ul>
+            </div>
+            <div class="tabs__form-block form-block">
+              <h3 class="tabs__title-list">Добавить характеристику</h3>
+              <form class="form-block__flex" id="formAdd" method="post" action="#">
+                <input class="form-block__input" type="text" placeholder="Алюминиевый сплав" required>
+                <button class="form-block__button" type="submit">Добавить</button>
+              </form>
+            </div>
+            <div class="tabs__button-block button-block">
+              <form class="button-block__flex" method="post" action="#">
+                <button class="button-block__submit" type="submit">Окей</button>
+                <button class="button-block__reset" type="reset">Отмена</button>
+              </form>
+            </div>
+          </div>
+        </div>
+          
+      </div>
+    </section>
+  </main>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/script.js"></script>
+</div>
+</body>
+</html>
